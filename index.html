@@ -18,6 +18,7 @@ transform:scale(0.175);
 -o-transform:scale(0.175); /* Opera */
 }
 </style>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 var i = 179.2;
 function hello() {
@@ -33,6 +34,15 @@ function hello() {
 	}
 }
 //window.onload=hello
+$(document).ready(function () {
+	$.ajax({
+		url: 'http://linqingxiang.com/js/emo.js',
+		type: 'GET',
+		dataType: "jsonp",
+		success: function (data) {
+		}
+	});
+});
 </script>
 </head>
 <body>
